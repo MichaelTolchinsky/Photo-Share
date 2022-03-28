@@ -4,7 +4,6 @@ import { feedQuery, searchQuery } from "../utils/data";
 import { client } from "../client";
 import MasonryLayout from "./MasonryLayout";
 import Spinner from "./Spinner";
-import { RiH2 } from "react-icons/ri";
 
 const Feed = () => {
   const [loading, setLoading] = useState(false);
