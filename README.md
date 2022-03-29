@@ -1,5 +1,5 @@
 # Photo Sharing Web App
-social media photo sharing web app build with react, google authentication and sanity cms.<br/>
+social media photo sharing web app build with react, google authentication and sanity cms (https://www.sanity.io/).<br/>
 the goal of this project was to learn what is a cms and how to work with a cms
 
 # Visit the app
