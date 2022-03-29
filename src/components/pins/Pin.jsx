@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuid } from "uuid";
 import { MdDownloadForOffline } from "react-icons/md";
 import { AiTwotoneDelete } from "react-icons/ai";
 import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
-
-import { client, urlFor } from "../client";
+import { client, urlFor } from "../../client";
 
 const Pin = ({ pin }) => {
   const [postHovered, setPostHovered] = useState(false);
@@ -41,7 +40,7 @@ const Pin = ({ pin }) => {
         .setIfMissing({ save: [] })
         .insert("after", "save[-1]", [
           {
-            _key: uuidv4(),
+            _key: uuid(),
             userId: user?.googleId,
             postedBy: {
               _type: "postedBy",

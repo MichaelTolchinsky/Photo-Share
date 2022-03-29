@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { MdDownloadForOffline } from "react-icons/md";
 import { Link, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-import { client, urlFor } from "../client";
-import MasonryLayout from "./MasonryLayout";
-import { pinDetailMorePinQuery, pinDetailQuery } from "../utils/data";
-import Spinner from "./Spinner";
+import { client, urlFor } from "../../client";
+import { pinDetailMorePinQuery, pinDetailQuery } from "../../utils/data";
+import MasonryLayout from "../layout/MasonryLayout";
+import Spinner from "../layout/Spinner";
 
 const PinDetail = ({ user }) => {
   const [pins, setPins] = useState(null);
@@ -87,7 +87,7 @@ const PinDetail = ({ user }) => {
                 <MdDownloadForOffline />
               </a>
             </div>
-            <a href={pinDetail.destination} target="_blank" rel="norefferer">
+            <a href={pinDetail.destination} target="_blank" rel="noreferrer">
               {pinDetail.destination}
             </a>
           </div>

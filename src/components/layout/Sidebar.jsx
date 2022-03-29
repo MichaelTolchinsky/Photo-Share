@@ -1,9 +1,8 @@
 import React from "react";
 import { RiHomeFill } from "react-icons/ri";
-import { IoIosArrowForward } from "react-icons/io";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
-import { categories } from "../utils/data";
+import { categories } from "../../utils/data";
 
 const isActiveStyle =
   "flex items-center px-5 gap-3 font-extrabold border-r-2 border-black transition-all ease-in-out capitalize";

@@ -8,8 +8,8 @@ import {
   userSavedPinsQuery,
 } from "../utils/data";
 import { client } from "../client";
-import MasonryLayout from "./MasonryLayout";
-import Spinner from "./Spinner";
+import MasonryLayout from "./layout/MasonryLayout";
+import Spinner from "./layout/Spinner";
 
 const activeBtnStyles =
   "bg-red-500 text-white font-bold p-2 rounded-full w-20 outline-none";
